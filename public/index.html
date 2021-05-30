@@ -25,6 +25,16 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets1/vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets1/vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets1/vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets1/css/util.css">
+  <link rel="stylesheet" type="text/css" href="assets1/css/main.css">
+ 
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +49,39 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    
+    <!-- <script src="./assets/js/main.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets1/js/main.js"></script>
+    <script>
+      $('.js-pscroll').each(function(){
+        var ps = new PerfectScrollbar(this);
+  
+        $(window).on('resize', function(){
+          ps.update();
+        })
+      });
+        
+      
+    </script>
+     <script type = "text/javascript">
+      var fullHeight = function() {
+              console.log("in script")
+            $('.js-fullheight').css('height', $(window).height());
+            $(window).resize(function(){
+              $('.js-fullheight').css('height', $(window).height());
+            });
+
+            };
+            fullHeight();
+
+            $('#sidebarCollapse').on('click', function () {
+            console.log("button clicked")
+              $('#sidebar').toggleClass('active');
+            });
+    </script>
+
   </body>
 </html>
